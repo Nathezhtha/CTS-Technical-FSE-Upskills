@@ -1,110 +1,113 @@
-/* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #f7f9fb;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
 
-/* Navigation */
-.navMenu {
-  background: #004d40;
-  padding: 10px;
-  text-align: center;
-}
-.navMenu a {
+#mainHeader {
+  background: linear-gradient(to right, #4caf50, #81c784);
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-.navMenu a:hover {
-  text-decoration: underline;
-}
-
-/* Welcome Banner */
-#welcomeBanner {
-  background: #e0f7fa;
-  padding: 20px;
   text-align: center;
+  padding: 10px;
 }
 
-/* Event Card */
+/* Event Card styles */
 .eventCard {
-  background-color: #fff;
   border: 1px solid #ccc;
   padding: 15px;
-  margin-top: 20px;
-}
-
-/* Highlight Class */
-.highlight {
-  color: #00796b;
-  font-weight: bold;
-}
-
-/* Gallery */
-.gallery-img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border: 2px solid #ccc;
-  padding: 5px;
   margin: 10px;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Table Styling */
+/* Style for main CTA button */
+/* .cta-button {
+  background-color: #007BFF;
+  color: white;
+} */
+
+h3, p {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p {
+  text-align: justify;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+/* Link styles */
+a:link {
+  color: #0077cc;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
+/* List styling */
+.navMenu {
+  list-style-type: none;
+  padding: 10px;
+}
+.navMenu li {
+  margin: 5px 0;
+}
+
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 20px;
 }
-td {
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: center;
 }
-
-/* Form Styling */
-form {
-  background: #ffffff;
-  padding: 20px;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-}
-input, select, textarea {
-  display: block;
-  margin: 10px 0;
-  padding: 5px;
-  width: 100%;
-}
-output {
-  display: block;
-  margin-top: 10px;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-/* News Section */
+.highlight {
+  outline: 2px solid orange;
+}
+
+
 .news {
   column-count: 2;
   column-gap: 30px;
-  column-rule: 1px solid #ccc;
+  column-rule: 1px solid gray;
   padding: 15px;
-  background: #e8f5e9;
-  margin-top: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navMenu a {
+
+@media screen and (max-width: 768px) {
+  .navMenu li {
     display: block;
-    margin: 5px 0;
   }
-  .gallery-img {
+
+  body {
+    font-size: 14px;
+  }
+
+  img {
     width: 100%;
+    height: auto;
   }
 }
